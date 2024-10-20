@@ -1,4 +1,4 @@
 # NITS
 ## The room of requirements
 
-This is the base repository for PhD thesis and related works
+Base repository for scholarly works towards PhD thesis
