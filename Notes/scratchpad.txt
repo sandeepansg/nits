@@ -1,0 +1,46 @@
+Simultaneous localization and mapping (SLAM) is a computational problem that keeps track of an agent, usually a mobile robot, placed in an unknown indoor or outdoor location in an unknown environment and simultaneously, bit by bit, builds a consistent map of the same environment using local information perceived by its sensor. In other words, the problem is defined as constructing map of an unknown environment while simultaneously tracking location of the robot in it.
+Leonard and Durrant-Whyte summarized the problem of navigation into answering three questions: where am I? where am I going? and how should I get there? The first question is about localization problem. The second question is specifying a goal and the third question is being able to do path planning to achieve that specified goal.
+
+Navigation, localization and mapping are basic technologies for smart autonomous mobile robots and is a topic that is much deliberated and researched upon in modern robotic and smart industry.
+
+At the initial stage of research it appeared as a chicken or the egg problem. Durrant-Whyte and Baily termed a solution to the SLAM problem as a “holy grail” for the mobile robotics community as it would provide the means to make a robot truly autonomous. However, over the last four decades several algorithms based on computational geometry and computer vision have been developed to solve it, albeit approximately, in tractable time for certain environments. Popular approximate solution methods include the particle filter, extended Kalman filter, covariance intersection, and Graph SLAM.
+
+Early research and growth
+
+A study of the genesis of the SLAM problem takes us back to the 1986 IEEE Robotics and Automation Conference held in San Francisco. At that time a number of researchers was working on application of estimation-theoretic methods to mapping and localisation problems. Following the deliberations at the conference they began to recognise that consistent probabilistic mapping was a fundamental problem in robotics with major conceptual and computational issues that needed to be addressed. A key element of this works was to show that there must be a high degree of correlation between estimates of the location of different landmarks in a map and that indeed these correlations would grow with successive observations.
+
+At the same time early works in visual navigation were also been undertaken using Kalman filter-type algorithms. These two strands of research had much in common and the conceptual break-through came with the realisation that the combined or concurrent mapping and localisation problem, once formulated as a single estimation problem, was actually convergent. Most importantly, it was recognised that the correlations between landmarks, that most researchers had tried to minimize, were actually the critical part of the problem and that, on the contrary, the more these correlations grew, the better the solution. 
+A seminal work in SLAM is the research of R.C. Smith and P. Cheeseman on the representation and estimation of spatial uncertainty in 1986.[ Smith, R.C.; Cheeseman, P. (1986)][Smith, R.C.; Self, M.; Cheeseman, P. (1986)] Other pioneering work in this field was conducted by the research group of Hugh F. Durrant-Whyte in the early 1990s.[Leonard, J.J.; Durrant-whyte, H.F. (1991)] which showed that solutions to SLAM exist in the infinite data limit.
+
+Since then the area has grown very fast, and many algorithms and techniques have been proposed to date. In a simple manner SLAM can be defined as having two major components: one, building a map of unknown environments and two, track the position or movement of the sensors and camera (generally on a mobile robot) simultaneously through different positions and different times in that environment. The structure of the SLAM problem, the convergence result and the coining of the acronym ‘SLAM’ was first presented in a mobile robotics survey paper presented at the 1995 International Symposium on Robotics Research [H. Durrant-Whyte, D. Rye, and E. Nebot. Localisation of automatic guided vehicles. In G. Giralt and G. Hirzinger, editors, Robotics Research: The 7th International Symposium (ISRR’95), pages 613–625. Springer Verlag, 1996.]. 
+Uses
+SLAM has many uses, including: Autonomous vehicles, Indoor navigation, Augmented and virtual reality, Information overlays, Information overlays, Mining and forestry and Urban planning. To illustrate, SLAM is a key technology in self-driving cars, which use it to build maps of their environment and navigate safely. It is used in indoor navigation systems to help people navigate large buildings like airports, museums, and shopping malls. For example, Google Maps uses SLAM to provide real-time location information and directions. SLAM can be used to identify objects and images in the real world and project virtual content on AR displays. SLAM and g, where concrete jungles can block or interfere with GPS signals.AI software can be used to identify text, translate it, and display it in AR. SLAM is ideal in situations where GPS triangulation is difficult or impossible. It can be used in long-term urban planning.
+
+SLAM has many uses, including: Autonomous vehicles, Indoor navigation, Augmented and virtual reality, Information overlays, Information overlays, Mining and forestry and Urban planning. 
+
+    • Autonomous vehicles 
+SLAM is a key technology in self-driving cars, which use it to build maps of their environment and navigate safely. 
+    • Indoor navigation
+SLAM is used in indoor navigation systems to help people navigate large buildings like airports, museums, and shopping malls. For example, Google Maps uses SLAM to provide real-time location information and directions.
+    • Augmented and virtual reality
+SLAM can be used to identify objects and images in the real world and project virtual content on AR displays. 
+    • Information overlays 
+    • SLAM and AI software can be used to identify text, translate it, and display it in AR. 
+    • Mining and forestry 
+    • SLAM is ideal in situations where GPS triangulation is difficult or impossible. 
+    • Urban planning 
+    • SLAM can be used in long-term urban planning, where concrete jungles can block or interfere with GPS signals. 
+
+Flowchart of SLAM techniques
+Explanation of the problem by a figure
+
+An outline of this paper
+
+This paper outline is as follows: Section 2 presents an overview of SLAM problem and various approaches to solve it (Statistical/vision based/computational). Section 3 describes different types of sensors utilized in the SLAM approaches alongwith shortcomings. Section 4 presents a review of feature extraction and matching algorithms with simulation results. Sensor fusion is discussed in Section 5  Deep Learning (DL) methods and V-SLAM datasets are studied in a comparison view in Sections 6 and 7, respectively. Finally, a conclusion is drawn in Section 8.
+
+At a theoretical and conceptual level, SLAM can now be considered a solved problem. However, substantial issues remain in practically realizing more general SLAM solutions and notably in building and using perceptually rich maps as part of a SLAM algorithm.
+
+
+In this article, we survey the state of the art in active
+SLAM and take an in-depth look at the open challenges that still
+require attention to meet the needs of modern applications.
