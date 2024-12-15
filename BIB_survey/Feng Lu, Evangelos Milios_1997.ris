@@ -1,0 +1,17 @@
+TY  - JOUR
+AU  - Lu, F.
+AU  - Milios, E.
+PY  - 1997
+DA  - 1997/10/01
+TI  - Globally Consistent Range Scan Alignment for Environment Mapping
+JO  - Autonomous Robots
+SP  - 333
+EP  - 349
+VL  - 4
+IS  - 4
+AB  - A robot exploring an unknown environment may need to build a worldmodel from sensor measurements. In order to integrate all the framesof sensor data, it is essential to align the data properly. Anincremental approach has been typically used in the past, in whicheach local frame of data is aligned to a cumulative global model, andthen merged to the model. Because different parts of the model areupdated independently while there are errors in the registration,such an approach may result in an inconsistent model.
+SN  - 1573-7527
+UR  - https://doi.org/10.1023/A:1008854305733
+DO  - 10.1023/A:1008854305733
+ID  - Lu1997
+ER  - 
